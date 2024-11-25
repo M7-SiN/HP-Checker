@@ -3,14 +3,14 @@ import requests
 from time import sleep
 from flask import Flask, jsonify
 
-app = Flask(__name__)
+app = Flask(__m7sin__)
 
 health_thread = None
 
 def health_loop():
     while True:
         # Make a request to the health endpoint
-        response = requests.get('https://placeholder-url.com/health')
+        response = requests.get('https://mediaflow-proxy-y72r.onrender.com/health')
         
         # Check the response status code
         if response.status_code == 200:
